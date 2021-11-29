@@ -100,6 +100,7 @@ nav{
   margin-top: 110px;
 
   .footer-places{
+    display: grid;
     grid-template-columns: repeat(3, 200px);
     column-gap: 50px;
     justify-content: center;
@@ -108,5 +109,16 @@ nav{
 
   .arrow{
     align-self: end;
+  }
+
+  .footer-place-item{
+    display: grid;
+    grid-template-columns:45px 100px;
+    align-items: center;
+
+    .plan-link{
+      color: white;
+      text-decoration: none;
+    }
   }
 }

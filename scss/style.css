@@ -47,6 +47,10 @@ nav .menu li {
   margin-right: 80px;
 }
 
+nav .menu li:last-child {
+  margin-right: 0;
+}
+
 nav .menu li a {
   font-family: Inter, sans-serif;
   color: white;
@@ -102,5 +106,48 @@ nav .menu li a:hover {
 .home-page-main .home-page-title h1 {
   font-size: 150px;
   letter-spacing: 10px;
+}
+
+.home-page-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding-left: 20px;
+  margin-top: 110px;
+}
+
+.home-page-footer .footer-places {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 60px;
+}
+
+.home-page-footer .arrow {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.home-page-footer .footer-place-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45px 100px;
+      grid-template-columns: 45px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page-footer .footer-place-item .plan-link {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
